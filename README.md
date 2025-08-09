@@ -45,8 +45,9 @@ This site is designed with a **dark/light mode toggle**, smooth animations, and 
 ## 📸 Screenshots
 
 
-![Home Screenshot](screenshort\index_html.jpg)
-
+<p align="center">
+  <img src="screenshort/index_html.jpg" alt="Home Screenshot" height="600">
+</p>
 
 
 ---
