@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Jobaer Islam Alif | Software Engineer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'light-bg': '#f3f4f6', 'light-text': '#111827', 'light-card': '#ffffff', 'light-accent': '#7c3aed', 'light-accent-2': '#14b8a6',
+                        'dark-bg': '#0b1120', 'dark-text': '#e5e7eb', 'dark-card': '#1a2233', 'dark-accent': '#a78bfa', 'dark-accent-2': '#b2fff5', 'dark-footer': '#070a14',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text font-inter transition-colors duration-300">
+
+    <header class="bg-light-bg/80 dark:bg-dark-bg/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="font-poppins text-xl font-bold">Alif<span class="text-light-accent dark:text-dark-accent">.</span>dev</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="hover:text-light-accent dark:hover:text-dark-accent transition duration-300">About</a>
+                <a href="#skills" class="hover:text-light-accent dark:hover:text-dark-accent transition duration-300">Skills</a>
+                <a href="#projects" class="hover:text-light-accent dark:hover:text-dark-accent transition duration-300">Projects</a>
+                <a href="#education" class="hover:text-light-accent dark:hover:text-dark-accent transition duration-300">Education</a>
+                <button id="theme-toggle" class="text-xl"><i class="fa-solid fa-moon" id="theme-toggle-dark-icon"></i><i class="fa-solid fa-sun" id="theme-toggle-light-icon"></i></button>
+                <a href="#contact-form" class="btn-primary bg-light-accent text-white dark:bg-dark-accent dark:text-dark-text font-bold px-4 py-2 rounded-md hover:bg-opacity-80">Contact Me</a>
+            </div>
+            <button id="menu-btn" class="md:hidden block text-2xl"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-light-card dark:bg-dark-card">
+            <a href="#home" class="block py-2 px-6 hover:bg-light-bg dark:hover:bg-dark-bg">About</a>
+            <a href="#skills" class="block py-2 px-6 hover:bg-light-bg dark:hover:bg-dark-bg">Skills</a>
+            <a href="#projects" class="block py-2 px-6 hover:bg-light-bg dark:hover:bg-dark-bg">Projects</a>
+            <a href="#education" class="block py-2 px-6 hover:bg-light-bg dark:hover:bg-dark-bg">Education</a>
+            <a href="#contact" class="block py-2 px-6 hover:bg-light-bg dark:hover:bg-dark-bg">Contact</a>
+            <div class="px-6 py-2">
+                <button id="theme-toggle-mobile" class="text-xl"><i class="fa-solid fa-moon" id="theme-toggle-dark-icon-mobile"></i><i class="fa-solid fa-sun" id="theme-toggle-light-icon-mobile"></i><span class="ml-2 text-sm"></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="home" class="container mx-auto px-6 min-h-screen flex flex-col-reverse md:flex-row items-center pt-24 md:pt-0">
+            <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">
+                <h1 class="font-poppins text-4xl md:text-6xl font-bold leading-tight">Md Jobaer Islam Alif</h1>
+                <h2 class="text-2xl md:text-3xl font-medium text-light-accent dark:text-dark-accent mt-2 mb-6">Competitive Programmer</h2>
+                <p class="mb-8 max-w-lg mx-auto md:mx-0 text-light-text/80 dark:text-dark-text/80">A passionate Software Engineer and Competitive Programmer with a knack for turning complex problems into elegant, efficient code. I thrive on challenges and am dedicated to building impactful software solutions.</p>
+                <a href="#projects" class="btn-primary bg-light-accent text-white dark:bg-dark-accent dark:text-dark-text font-bold px-6 py-3 rounded-md hover:bg-opacity-80">View My Work</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center mb-10 md:mb-0" data-aos="fade-left">
+                <img src="public/profile.jpg" alt="Md Jobaer Islam Alif" class="w-64 h-64 md:w-96 md:h-96 rounded-full object-cover border-4 border-light-accent dark:border-dark-accent shadow-lg shadow-light-accent/20 dark:shadow-dark-accent/20">
+            </div>
+        </section>
+
+        <section id="skills" class="container mx-auto px-6 py-20">
+            <h2 class="font-poppins text-3xl font-bold text-center mb-12" data-aos="fade-up">My Skills & Expertise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center">
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="100"><i class="fa-brands fa-c-plus-plus text-5xl text-light-accent dark:text-dark-accent-2 mb-2"></i><span>C/C++</span></div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="150"><i class="fa-brands fa-python text-5xl text-light-accent dark:text-dark-accent-2 mb-2"></i><span>Python</span></div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200"><i class="fa-brands fa-js text-5xl text-light-accent dark:text-dark-accent-2 mb-2"></i><span>JavaScript</span></div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="250"><i class="fa-brands fa-java text-5xl text-light-accent dark:text-dark-accent-2 mb-2"></i><span>Java</span></div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300"><i class="fa-brands fa-html5 text-5xl text-light-accent dark:text-dark-accent-2 mb-2"></i><span>HTML</span></div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="350"><i class="fa-brands fa-css3-alt text-5xl text-light-accent dark:text-dark-accent-2 mb-2"></i><span>CSS</span></div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="400"><i class="fa-brands fa-react text-5xl text-light-accent dark:text-dark-accent-2 mb-2"></i><span>React.js</span></div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="450"><i class="fa-solid fa-database text-5xl text-light-accent dark:text-dark-accent-2 mb-2"></i><span>MySQL</span></div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="500"><i class="fa-solid fa-wind text-5xl text-light-accent dark:text-dark-accent-2 mb-2"></i><span>Tailwind CSS</span></div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="550"><i class="fa-solid fa-puzzle-piece text-5xl text-light-accent dark:text-dark-accent-2 mb-2"></i><span>Problem Solving</span></div>
+            </div>
+        </section>
+
+        <section id="projects" class="container mx-auto px-6 py-20">
+             <h2 class="font-poppins text-3xl font-bold text-center mb-12" data-aos="fade-up">My Projects</h2>
+             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-light-card dark:bg-dark-card shadow-md rounded-lg p-6 flex flex-col" data-aos="fade-up"><h3 class="font-poppins text-xl font-bold mb-2">School Management System</h3><p class="flex-grow mb-4 text-light-text/80 dark:text-dark-text/80">A comprehensive desktop application developed with Python for managing student records, admin tasks, and academic data, backed by a MySQL database.</p><div class="mb-4"><span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">Python</span> <span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">MySQL</span></div><div class="mt-auto"><a href="https://github.com/alifjobaer12/School_Management_System" target="_blank" class="text-light-accent dark:text-dark-accent hover:underline">View on GitHub &rarr;</a></div></div>
+                <div class="bg-light-card dark:bg-dark-card shadow-md rounded-lg p-6 flex flex-col" data-aos="fade-up" data-aos-delay="100"><h3 class="font-poppins text-xl font-bold mb-2">SmartSchool</h3><p class="flex-grow mb-4 text-light-text/80 dark:text-dark-text/80">A desktop GUI application for school administration, handling tasks like student enrollment and data management with a clean interface.</p><div class="mb-4"><span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">Python</span> <span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">CustomTkinter</span></div><div class="mt-auto"><a href="https://github.com/alifjobaer12/SmartSchool" target="_blank" class="text-light-accent dark:text-dark-accent hover:underline">View on GitHub &rarr;</a></div></div>
+                <div class="bg-light-card dark:bg-dark-card shadow-md rounded-lg p-6 flex flex-col" data-aos="fade-up" data-aos-delay="200"><h3 class="font-poppins text-xl font-bold mb-2">Portfolio Website</h3><p class="flex-grow mb-4 text-light-text/80 dark:text-dark-text/80">A web development assessment showcasing skills in front-end technologies to create a personal portfolio.</p><div class="mb-4"><span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">HTML</span> <span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">CSS</span> <span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">JS</span></div><div class="flex space-x-4 mt-auto"><a href="https://github.com/alifjobaer12/My-Portfolio" target="_blank" class="text-light-accent dark:text-dark-accent hover:underline">GitHub &rarr;</a><a href="https://alifjobaer12-final-assignment2.surge.sh/" target="_blank" class="text-light-accent dark:text-dark-accent hover:underline">Live Demo &rarr;</a></div></div>
+                <div class="bg-light-card dark:bg-dark-card shadow-md rounded-lg p-6 flex flex-col" data-aos="fade-up"><h3 class="font-poppins text-xl font-bold mb-2">Productivity Tracker</h3><p class="flex-grow mb-4 text-light-text/80 dark:text-dark-text/80">A command-line application built with C++ to help users monitor and manage their tasks, boosting efficiency and focus.</p><div class="mb-4"><span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">C++</span></div><div class="mt-auto"><a href="https://github.com/alifjobaer12/project-productivity-tracker-" target="_blank" class="text-light-accent dark:text-dark-accent hover:underline">View on GitHub &rarr;</a></div></div>
+                <div class="bg-light-card dark:bg-dark-card shadow-md rounded-lg p-6 flex flex-col" data-aos="fade-up" data-aos-delay="100"><h3 class="font-poppins text-xl font-bold mb-2">YoutubeDownloader</h3><p class="flex-grow mb-4 text-light-text/80 dark:text-dark-text/80">A user-friendly desktop utility for downloading YouTube videos, created with Python and the CustomTkinter GUI library.</p><div class="mb-4"><span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">Python</span> <span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">CustomTkinter</span></div><div class="mt-auto"><a href="https://github.com/alifjobaer12/YoutubeDownloader" target="_blank" class="text-light-accent dark:text-dark-accent hover:underline">View on GitHub &rarr;</a></div></div>
+                <div class="bg-light-card dark:bg-dark-card shadow-md rounded-lg p-6 flex flex-col" data-aos="fade-up" data-aos-delay="200"><h3 class="font-poppins text-xl font-bold mb-2">ChronoMate</h3><p class="flex-grow mb-4 text-light-text/80 dark:text-dark-text/80">A sleek desktop time management tool built using Python and CustomTkinter, designed to help users track their time and stay organized.</p><div class="mb-4"><span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">Python</span> <span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">MySQL</span></div><div class="mt-auto"><a href="https://github.com/alifjobaer12/ChronoMate" target="_blank" class="text-light-accent dark:text-dark-accent hover:underline">View on GitHub &rarr;</a></div></div>
+                <div class="bg-light-card dark:bg-dark-card shadow-md rounded-lg p-6 flex-col project-hidden" data-aos="fade-up"><h3 class="font-poppins text-xl font-bold mb-2">WebDev Assessment</h3><p class="flex-grow mb-4 text-light-text/80 dark:text-dark-text/80">An assessment project focused on core web development skills using HTML, CSS, and JavaScript.</p><div class="mb-4"><span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">HTML</span> <span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">CSS</span> <span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">JS</span></div><div class="flex space-x-4 mt-auto"><a href="https://github.com/alifjobaer12/Assignment-1" target="_blank" class="text-light-accent dark:text-dark-accent hover:underline">GitHub &rarr;</a><a href="https://alifjobaer12-1stassignment.surge.sh/" target="_blank" class="text-light-accent dark:text-dark-accent hover:underline">Live Demo &rarr;</a></div></div>
+                <div class="bg-light-card dark:bg-dark-card shadow-md rounded-lg p-6 flex-col project-hidden" data-aos="fade-up" data-aos-delay="100"><h3 class="font-poppins text-xl font-bold mb-2">Calculator</h3><p class="flex-grow mb-4 text-light-text/80 dark:text-dark-text/80">A functional desktop calculator application with a clean interface, built using Python and CustomTkinter.</p><div class="mb-4"><span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">Python</span> <span class="bg-light-bg dark:bg-dark-bg px-2 py-1 text-sm rounded-md">CustomTkinter</span></div><div class="mt-auto"><a href="https://github.com/alifjobaer12/Normal_Calculator" target="_blank" class="text-light-accent dark:text-dark-accent hover:underline">View on GitHub &rarr;</a></div></div>
+             </div>
+             <div class="text-center mt-12" data-aos="fade-up">
+                <button id="projects-toggle-btn" class="btn-primary bg-light-accent text-white dark:bg-dark-accent dark:text-dark-text font-bold px-6 py-3 rounded-md hover:bg-opacity-80">Show More</button>
+             </div>
+        </section>
+
+        <section id="education" class="container mx-auto px-6 py-20">
+            <h2 class="font-poppins text-3xl font-bold text-center mb-12" data-aos="fade-up">Education & Experience</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <h3 class="font-poppins text-2xl font-bold mb-6">Education</h3>
+                    <div class="relative border-l-2 border-light-accent dark:border-dark-accent pl-6 space-y-8">
+                        <div class="relative"><div class="absolute -left-[35px] top-1 h-4 w-4 rounded-full bg-light-accent dark:bg-dark-accent"></div><h4 class="font-bold text-lg">Bangladesh University of Business and Technology (BUBT)</h4><p class="text-sm text-light-text/80 dark:text-dark-text/80">Undergraduate Student, CSE</p></div>
+                        <div class="relative"><div class="absolute -left-[35px] top-1 h-4 w-4 rounded-full bg-light-accent dark:bg-dark-accent"></div><h4 class="font-bold text-lg">Doweed Public School and College</h4><p class="text-sm text-light-text/80 dark:text-dark-text/80">HSC (Science)</p></div>
+                        <div class="relative"><div class="absolute -left-[35px] top-1 h-4 w-4 rounded-full bg-light-accent dark:bg-dark-accent"></div><h4 class="font-bold text-lg">Jessore Shikkha Bord Gov. Model School And College</h4><p class="text-sm text-light-text/80 dark:text-dark-text/80">SSC (Science)</p></div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="font-poppins text-2xl font-bold mb-6">Experience</h3>
+                    <div class="relative border-l-2 border-gray-300 dark:border-gray-700 pl-6 space-y-8">
+                        <p class="text-light-text/70 dark:text-dark-text/70">My professional journey is just beginning. Check back soon for updates!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="achievements" class="py-20 bg-light-bg dark:bg-dark-bg transition-colors duration-300">
+            <div class="container mx-auto px-6">
+                <h2 class="font-poppins text-3xl font-bold text-center mb-12" data-aos="fade-up">Achievements & Recognition</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-light-card dark:bg-dark-card shadow-md rounded-lg p-6 text-center flex flex-col items-center" data-aos="fade-up"><div class="w-16 h-16 rounded-full bg-light-accent dark:bg-dark-accent flex items-center justify-center text-white dark:text-dark-bg text-2xl mb-4"><i class="fa-solid fa-trophy"></i></div><h3 class="font-semibold text-lg mb-2">Programming Contest Participation</h3><p class="text-sm text-light-text/70 dark:text-dark-text/70 mb-2">Active participant in university programming contests</p><span class="inline-block bg-light-bg dark:bg-dark-bg border border-light-accent dark:border-dark-accent text-light-accent dark:text-dark-accent rounded-full px-3 py-1 text-xs font-semibold">2023</span></div>
+                    <div class="bg-light-card dark:bg-dark-card shadow-md rounded-lg p-6 text-center flex flex-col items-center" data-aos="fade-up" data-aos-delay="100"><div class="w-16 h-16 rounded-full bg-light-accent dark:bg-dark-accent flex items-center justify-center text-white dark:text-dark-bg text-2xl mb-4"><i class="fa-solid fa-graduation-cap"></i></div><h3 class="font-semibold text-lg mb-2">Academic Excellence</h3><p class="text-sm text-light-text/70 dark:text-dark-text/70 mb-2">Consistent high performance in CSE coursework</p><span class="inline-block bg-light-bg dark:bg-dark-bg border border-light-accent dark:border-dark-accent text-light-accent dark:text-dark-accent rounded-full px-3 py-1 text-xs font-semibold">2022-2024</span></div>
+                    <div class="bg-light-card dark:bg-dark-card shadow-md rounded-lg p-6 text-center flex flex-col items-center" data-aos="fade-up" data-aos-delay="200"><div class="w-16 h-16 rounded-full bg-light-accent dark:bg-dark-accent flex items-center justify-center text-white dark:text-dark-bg text-2xl mb-4"><i class="fa-solid fa-users"></i></div><h3 class="font-semibold text-lg mb-2">Tech Community Member</h3><p class="text-sm text-light-text/70 dark:text-dark-text/70 mb-2">Active member of BUBT programming community</p><span class="inline-block bg-light-bg dark:bg-dark-bg border border-light-accent dark:border-dark-accent text-light-accent dark:text-dark-accent rounded-full px-3 py-1 text-xs font-semibold">2021-Present</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-6 py-20">
+            <div class="bg-light-card dark:bg-dark-card rounded-lg shadow-md p-8 md:p-12 max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <h2 class="font-poppins text-3xl font-bold text-light-accent dark:text-dark-accent mb-4">Looking Ahead</h2>
+                <p class="text-light-text/80 dark:text-dark-text/80 leading-relaxed">I'm excited to transition from academic learning to professional development. My goal is to join a dynamic team where I can contribute to meaningful projects, continue learning cutting-edge technologies, and grow as a software professional while making a positive impact through code.</p>
+            </div>
+        </section>
+
+        <section id="contact-form" class="container mx-auto px-6 py-20">
+             <h2 class="font-poppins text-3xl font-bold text-center mb-4" data-aos="fade-up">Get In Touch</h2>
+             <p class="max-w-2xl mx-auto mb-12 text-center text-light-text/80 dark:text-dark-text/80" data-aos="fade-up" data-aos-delay="100">Have a project in mind, a question, or just want to connect? Send me a message below.</p>
+             <form action="https://formspree.io/f/your_unique_id" method="POST" class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                    <div class="relative"><input type="text" name="name" id="name" class="form-field peer" placeholder=" " required /><label for="name" class="form-label">Your Name</label></div>
+                    <div class="relative"><input type="email" name="email" id="email" class="form-field peer" placeholder=" " required /><label for="email" class="form-label">Your Email</label></div>
+                </div>
+                <div class="relative mb-6"><input type="text" name="subject" id="subject" class="form-field peer" placeholder=" " required /><label for="subject" class="form-label">Subject</label></div>
+                <div class="relative mb-8"><textarea name="message" id="message" rows="5" class="form-field peer" placeholder=" " required></textarea><label for="message" class="form-label">Your Message</label></div>
+                <div class="text-center"><button type="submit" class="btn-primary inline-block bg-light-accent text-white dark:bg-dark-accent dark:text-dark-text font-bold px-8 py-3 rounded-md text-lg hover:bg-opacity-80">Send Message</button></div>
+             </form>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-light-card dark:bg-dark-footer text-light-text/80 dark:text-dark-text/70 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold text-light-text dark:text-dark-text">Alif<span class="text-light-accent dark:text-dark-accent">.</span>Dev</h3>
+                    <p class="mt-2 text-sm">Showcasing skills and experience professionally.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://github.com/alifjobaer12" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/alifjobaer12" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/allifjobaer12" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://codeforces.com/profile/alifjobaer12" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-solid fa-code"></i></a>
+                        <a href="https://www.facebook.com/jobaer.alif.3" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/j.i.alif_" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-light-text dark:text-dark-text">CONTACT</h3>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <a href="tel:+8801960024750" class="block hover:text-light-accent dark:hover:text-dark-accent">+8801960024750</a>
+                        <a href="mailto:alifjobaer12@gmail.com" class="block hover:text-light-accent dark:hover:text-dark-accent">alifjobaer12@gmail.com</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-light-text dark:text-dark-text">FOLLOW</h3>
+                    <form class="mt-4">
+                        <label for="email-follow" class="sr-only">Your Email Address</label>
+                        <input type="email" id="email-follow" placeholder="Enter your email here" class="bg-light-bg dark:bg-dark-card text-light-text dark:text-dark-text w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-light-accent dark:focus:ring-dark-accent" required>
+                        <button type="submit" class="bg-light-text/80 text-light-bg dark:bg-dark-card dark:text-dark-text w-full px-4 py-2 mt-2 rounded-md hover:bg-opacity-80 transition duration-300">Submit Your Request</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-light-text/10 dark:border-dark-text/10 pt-6 text-center text-sm">
+                <p>&copy; 2024 Md Jobaer Islam Alif. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

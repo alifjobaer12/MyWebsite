@@ -1,0 +1,97 @@
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f3f4f6; }
+::-webkit-scrollbar-thumb { background: #7c3aed; border-radius: 4px; }
+html.dark ::-webkit-scrollbar-track { background: #0b1120; }
+html.dark ::-webkit-scrollbar-thumb { background: #a78bfa; }
+
+/* Class to hide projects */
+.project-hidden { display: none; }
+
+/* --- Profile Picture Glow & Hover Effect --- */
+#home img {
+  box-shadow: 0 0 60px 15px rgba(167, 139, 250, 0.25);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+#home img:hover {
+  box-shadow: 0 0 80px 25px rgba(167, 139, 250, 0.4);
+  transform: scale(1.03);
+}
+
+/* --- Universal Hover Effects --- */
+#projects .bg-light-card, #achievements .bg-light-card, #skills .flex-col {
+  transition: transform 0.3s ease-in-out;
+}
+#projects .bg-light-card:hover, #achievements .bg-light-card:hover, #skills .flex-col:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* --- FIXED: Button Hover Effect --- */
+.btn-primary {
+  transition: transform 0.3s ease-in-out;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+/* --- Theme Toggle Button Animation --- */
+#theme-toggle, #theme-toggle-mobile {
+  position: relative; width: 24px; height: 24px;
+}
+#theme-toggle i, #theme-toggle-mobile i {
+  position: absolute; top: 0; left: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform-origin: center;
+}
+.icon-hidden {
+  transform: rotate(-90deg) scale(0); opacity: 0;
+}
+
+/* --- NEW: Animated Floating Label Form Styles --- */
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  padding-top: 1.5rem; /* Make space for the floating label */
+  font-size: 1rem;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.3);
+  transition: border-color 0.3s;
+}
+.form-field:focus {
+  outline: none;
+  border-bottom-color: #7c3aed; /* light-accent */
+}
+html.dark .form-field {
+  border-bottom-color: rgba(229, 231, 235, 0.3);
+}
+html.dark .form-field:focus {
+  border-bottom-color: #a78bfa; /* dark-accent */
+}
+
+.form-label {
+  position: absolute;
+  top: 1.25rem;
+  left: 0.75rem;
+  font-size: 1rem;
+  color: rgba(17, 24, 39, 0.5);
+  transition: all 0.2s ease-in-out;
+  pointer-events: none; /* Allows clicks to go "through" the label to the input */
+  transform-origin: left top;
+}
+html.dark .form-label {
+  color: rgba(229, 231, 235, 0.5);
+}
+
+/* The magic part: When the peer input is focused OR not empty, move the label up */
+.peer:focus ~ .form-label,
+.peer:not(:placeholder-shown) ~ .form-label {
+  transform: translateY(-1.25rem) scale(0.75);
+  color: #7c3aed; /* light-accent */
+}
+html.dark .peer:focus ~ .form-label,
+html.dark .peer:not(:placeholder-shown) ~ .form-label {
+  color: #a78bfa; /* dark-accent */
+}
