@@ -39,14 +39,14 @@
 
     <header class="bg-light-bg/80 dark:bg-dark-bg/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="font-poppins text-xl font-bold">Alif<span class="text-light-accent dark:text-dark-accent">.</span>dev</a>
+            <a href="#home" class="font-poppins text-3xl font-bold">Alif<span class="text-light-accent dark:text-dark-accent">.</span>dev</a>
             <div class="hidden md:flex space-x-6 items-center">
                 <a href="#home" class="hover:text-light-accent dark:hover:text-dark-accent transition duration-300">About</a>
                 <a href="#skills" class="hover:text-light-accent dark:hover:text-dark-accent transition duration-300">Skills</a>
                 <a href="#projects" class="hover:text-light-accent dark:hover:text-dark-accent transition duration-300">Projects</a>
                 <a href="#education" class="hover:text-light-accent dark:hover:text-dark-accent transition duration-300">Education</a>
                 <button id="theme-toggle" class="text-xl"><i class="fa-solid fa-moon" id="theme-toggle-dark-icon"></i><i class="fa-solid fa-sun" id="theme-toggle-light-icon"></i></button>
-                <a href="#contact-form" class="btn-primary bg-light-accent text-white dark:bg-dark-accent dark:text-dark-text font-bold px-4 py-2 rounded-md hover:bg-opacity-80">Contact Me</a>
+                <a href="#contact" class="btn-primary bg-light-accent text-white dark:bg-dark-accent dark:text-dark-text font-bold px-4 py-2 rounded-md hover:bg-opacity-80">Download CV</a>
             </div>
             <button id="menu-btn" class="md:hidden block text-2xl"><i class="fa-solid fa-bars"></i></button>
         </nav>
@@ -62,14 +62,42 @@
         </div>
     </header>
 
-    <main>
+    <main class="md:mx-40 ">
         
         <section id="home" class="container mx-auto px-6 min-h-screen flex flex-col-reverse md:flex-row items-center pt-24 md:pt-0">
             <div class="md:w-1/2 flex flex-col items-center text-center md:items-start md:text-left" data-aos="fade-right">
                 <h1 class="font-poppins text-4xl md:text-6xl font-bold leading-tight">Md Jobaer Islam Alif</h1>
                 <h2 class="text-2xl md:text-3xl font-medium text-light-accent dark:text-dark-accent mt-2 mb-6">Competitive Programmer</h2>
                 <p class="mb-8 max-w-lg mx-auto md:mx-0 text-light-text/80 dark:text-dark-text/80">A dedicated student and competitive programmer with a strong foundation in algorithmic problem-solving. I thrive on tackling complex challenges and am skilled in designing and optimizing solutions.</p>
-                <a href="#projects" class="btn-primary bg-light-accent text-white dark:bg-dark-accent dark:text-dark-text font-bold px-6 py-3 rounded-md hover:bg-opacity-80">View My Work</a>
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                    <a href="#projects" class="btn-primary bg-transparent text-light-accent dark:text-dark-accent font-bold px-6 py-3 rounded-md border border-light-accent dark:border-dark-accent hover:bg-light-accent dark:hover:bg-dark-accent hover:text-white dark:hover:text-dark-text transition duration-300">
+                        View Work
+                    </a>
+                    <a href="#contact-form" class="btn-primary bg-light-accent text-white dark:bg-dark-accent dark:text-dark-text font-bold px-6 py-3 rounded-md hover:bg-opacity-80 transition duration-300">
+                        Contact Me
+                    </a>
+                </div>
+                <div class="md:col-span-2">
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://github.com/alifjobaer12" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/alifjobaer12" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://codeforces.com/profile/alifjobaer12" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300">
+                        <svg 
+                            fill="currentColor" 
+                            width="24" 
+                            height="24" 
+                            viewBox="0 0 24 24" 
+                            role="img" 
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M4.5 7.5A1.5 1.5 0 0 1 6 9v10.5A1.5 1.5 0 0 1 4.5 21h-3C.673 21 0 20.328 0 19.5V9c0-.828.673-1.5 1.5-1.5h3zm9-4.5A1.5 1.5 0 0 1 15 4.5v15a1.5 1.5 0 0 1-1.5 1.5h-3c-.827 0-1.5-.672-1.5-1.5v-15c0-.828.673-1.5 1.5-1.5h3zm9 7.5A1.5 1.5 0 0 1 24 12v7.5a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5V12a1.5 1.5 0 0 1 1.5-1.5h3z"></path>
+                        </svg>
+                        </a>
+                        <a href="https://www.facebook.com/jobaer.alif.3" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="mailto:alifjobaer12@gmail.com" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
             </div>
             <div class="md:w-1/2 flex justify-center mb-10 md:mb-0" data-aos="fade-left">
                 <img src="public/profile.jpg" alt="Md Jobaer Islam Alif" class="w-64 h-64 md:w-96 md:h-96 rounded-full object-cover border-4 border-light-accent dark:border-dark-accent shadow-lg shadow-light-accent/20 dark:shadow-dark-accent/20">
@@ -164,34 +192,47 @@
     </main>
 
     <footer id="contact" class="bg-light-card dark:bg-dark-footer text-light-text/80 dark:text-dark-text/70 pt-16 pb-8">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-12 mb-8">
+        <div class="container mx-auto md:mx-14 px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8 md:mx-10 space-y-8 md:space-y-0">
                 <div class="md:col-span-2">
-                    <h3 class="text-2xl font-bold text-light-text dark:text-dark-text">Alif<span class="text-light-accent dark:text-dark-accent">.</span>Dev</h3>
+                    <h3 class="text-2xl font-bold text-light-text dark:text-dark-text">Alif<span
+                            class="text-light-accent dark:text-dark-accent">.</span>Dev</h3>
                     <p class="mt-2 text-sm">Showcasing skills and experience professionally.</p>
                     <div class="flex space-x-4 mt-4">
-                        <a href="https://github.com/alifjobaer12" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/alifjobaer12" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://x.com/allifjobaer12" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://codeforces.com/profile/alifjobaer12" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-solid fa-code"></i></a>
-                        <a href="https://www.facebook.com/jobaer.alif.3" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/j.i.alif_" target="_blank" class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/alifjobaer12" target="_blank"
+                            class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/alifjobaer12" target="_blank"
+                            class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/allifjobaer12" target="_blank"
+                            class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://codeforces.com/profile/alifjobaer12" target="_blank"
+                            class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300">
+                            <svg fill="currentColor" width="24" height="24" viewBox="0 0 24 24" role="img"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.5 7.5A1.5 1.5 0 0 1 6 9v10.5A1.5 1.5 0 0 1 4.5 21h-3C.673 21 0 20.328 0 19.5V9c0-.828.673-1.5 1.5-1.5h3zm9-4.5A1.5 1.5 0 0 1 15 4.5v15a1.5 1.5 0 0 1-1.5 1.5h-3c-.827 0-1.5-.672-1.5-1.5v-15c0-.828.673-1.5 1.5-1.5h3zm9 7.5A1.5 1.5 0 0 1 24 12v7.5a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5V12a1.5 1.5 0 0 1 1.5-1.5h3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/jobaer.alif.3" target="_blank"
+                            class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/j.i.alif_" target="_blank"
+                            class="text-xl hover:text-light-accent dark:hover:text-dark-accent transition duration-300"><i
+                                class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold text-light-text dark:text-dark-text">CONTACT</h3>
                     <div class="mt-4 space-y-2 text-sm">
-                        <a href="tel:+8801960024750" class="block hover:text-light-accent dark:hover:text-dark-accent">+8801960024750</a>
-                        <a href="mailto:alifjobaer12@gmail.com" class="block hover:text-light-accent dark:hover:text-dark-accent">alifjobaer12@gmail.com</a>
+                        <a href="tel:+8801960024750"
+                            class="block hover:text-light-accent dark:hover:text-dark-accent">+8801960024750</a>
+                        <a href="mailto:alifjobaer12@gmail.com"
+                            class="block hover:text-light-accent dark:hover:text-dark-accent">alifjobaer12@gmail.com</a>
                     </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-light-text dark:text-dark-text">FOLLOW</h3>
-                    <form class="mt-4">
-                        <label for="email-follow" class="sr-only">Your Email Address</label>
-                        <input type="email" id="email-follow" placeholder="Enter your email here" class="bg-light-bg dark:bg-dark-card text-light-text dark:text-dark-text w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-light-accent dark:focus:ring-dark-accent" required>
-                        <button type="submit" class="bg-light-text/80 text-light-bg dark:bg-dark-card dark:text-dark-text w-full px-4 py-2 mt-2 rounded-md hover:bg-opacity-80 transition duration-300">Submit Your Request</button>
-                    </form>
                 </div>
             </div>
             <div class="border-t border-light-text/10 dark:border-dark-text/10 pt-6 text-center text-sm">
@@ -199,7 +240,6 @@
             </div>
         </div>
     </footer>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
